@@ -12,7 +12,9 @@ In this article, we will learn how to deploy a <mark style="background-color: li
   <img src="https://djangocentral.com/media/uploads/django_nginx_gunicorn.png"/>
 </p>
 
+I'm late to the party but it seems like a couple of markdown platforms (Quilt & iA Writer) are using a double equal to show highlighting.
 
+==highlight==
 
 
 
