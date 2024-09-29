@@ -127,7 +127,18 @@ sudo ufw allow 8000
 ```
 python manage.py runserver 0.0.0.0:8000
 ```
-- ## 🚀In your web browser navigate to [http://server_domain_or_IP:8000](http://server_domain_or_IP:8000) and you should see the app.
+- 🚀In your web browser navigate to [http://server_domain_or_IP:8000](http://server_domain_or_IP:8000) and you should see the app.
+```
+gunicorn --bind 0.0.0.0:8000 yourprojectname.wsgi
+```
+- 🚀In your web browser navigate to [http://server_domain_or_IP:8000](http://server_domain_or_IP:8000) and you should see the app.
+
+<p>Once you finishing testing the app press <code>ctrl + c</code> to stop the process and <code>deactivate</code> the virtual environment.</p>
+
+```
+deactivate
+```
+* Create a gunicorn socket file <code>sudo nano /etc/systemd/system/gunicorn.socket</code> Add this to it:
 
 
 
