@@ -225,7 +225,7 @@ Finally, we need to open up our firewall to normal traffic on port 80. Since we 
 sudo ufw delete allow 8000
 sudo ufw allow 'Nginx Full'
 ```
-## When launching your website update your nginx settings <code>sudo nano /etc/nginx/sites-available/yourprojectname</code> Replace <code>167.172.xxx.xx</code> with <code>yourwebsite.com</code>
+When launching your website update your nginx settings <code>sudo nano /etc/nginx/sites-available/yourprojectname</code> Replace <code>167.172.xxx.xx</code> with <code>yourwebsite.com</code>
 ```
 sudo nginx -t
 ```
