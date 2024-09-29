@@ -33,7 +33,7 @@ ufw enable
 ufw status
 ```
 
-## Copy your root SSH Key to the new Ubuntu user account(Optional)
+## Copy your root SSH Key to the new Ubuntu user account(<code>Optional</code>)
 ```
 rsync --archive --chown=newuser:newuser ~/.ssh /home/newuser
 ```
@@ -81,10 +81,8 @@ pip install -r requirements.txt
 ## changes in settings.py file to make it deployment-ready
 <code>production.py:</code>
 ```
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "secret-key"
 
-# SECURITY WARNING: define the correct hosts in production!
 ALLOWED_HOSTS = ["Ip_Address"]
 ```
 <code>settings.py</code>
@@ -130,7 +128,6 @@ sudo ufw allow 8000
 python manage.py runserver 0.0.0.0:8000
 ```
 - ## 🚀In your web browser navigate to [http://server_domain_or_IP:8000](http://server_domain_or_IP:8000) and you should see the app.
-
 
 
 
