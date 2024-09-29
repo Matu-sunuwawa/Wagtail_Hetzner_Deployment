@@ -199,10 +199,10 @@ server {
     error_log   /home/newuser/yourprojectname/nginx-error.log;
     location = /favicon.ico { access_log off; log_not_found off; }
     location /media/ {
-        alias /home/newuser/yourprojectname/media/;
+        alias /home/newuser/yourprojectname;
     }
     location /static/ {
-        alias /home/newuser/yourprojectname/static/;
+        alias /home/newuser/yourprojectname;
     }
 
     location / {
